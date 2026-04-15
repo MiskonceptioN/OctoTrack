@@ -153,6 +153,7 @@
 	<script>
 		let cheapestPrice = 0;
 		let mostExpensivePrice = 0;
+		const PRICE_THRESHOLD = 5; // Threshold in pence for highlighting prices as cheap or expensive
 
 		function updateCurrentPrice(p,t) {
 			$('#currentPrice').text(p + "p");
