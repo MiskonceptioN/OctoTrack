@@ -234,6 +234,22 @@
 			return `https://api.octopus.energy/v1/products/AGILE-24-10-01/electricity-tariffs/E-1R-AGILE-24-10-01-J/standard-unit-rates/?period_from=${periodFrom}&period_to=${periodTo}`;
 		}
 
+		function showMessage(message, type = "danger") {
+			const areaContent = `
+				<div id="alertMessage" class="my-3 alert alert-${type} alert-dismissible fade show" role="alert">
+					${message}
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>`;
+			
+			// Remove existing message if present
+			if ($("#alertMessage").length) $("#alertMessage").remove();
+			// Prepend areaContent to the first div in the dom
+			$("div").first().prepend(areaContent);
+			
+			// Scroll to the top of the page to show the message
+			window.scrollTo(0, 0);
+		}
+
 		$("button").click(async function() {
 			if ($(this).text() == "") return; // Ensure the button is not already loading
 
@@ -298,7 +314,9 @@
 				.then(() => {
 					$(this).addClass("active");
 				})
-				.catch(error => console.error('Error fetching data:', error))
+				.catch(error => {
+					showMessage(error);
+				})
 				.finally(() => {
 					$(this).html(textContent);
 				});
