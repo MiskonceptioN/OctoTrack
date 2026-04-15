@@ -179,9 +179,10 @@
 		function updatePriceTable(prices, currentDay = true) {
 			$('#priceTable tbody').empty();
 
-			let rowStyle = "";
-			let priceStyle = "";
 			prices.forEach(price => {
+				let rowStyle = "";
+				let priceStyle = "";
+
 				rowStyle = (price.time === getCurrentTimePeriod() && currentDay === true) ? "table-primary" : "";
 				priceStyle = (price.price < 0) ? "text-success" : "";
 
