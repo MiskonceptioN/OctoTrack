@@ -186,6 +186,7 @@
 
 				rowStyle = (price.time === getCurrentTimePeriod() && currentDay === true) ? "table-primary" : "";
 				if (price.price <= cheapestPrice + PRICE_THRESHOLD) { rowStyle = "table-success"; }
+				if (price.price >= mostExpensivePrice - PRICE_THRESHOLD) { rowStyle = "table-danger"; }
 
 				$('#priceTable tbody').append(`<tr class="${rowStyle}"><th scope="row">${price.time}</th><td class="${priceStyle}">${price.price}p</td></tr>`);
 			});
