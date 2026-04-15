@@ -1,0 +1,9 @@
+.display-7 {
+	font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+td, th {
+	max-width: 50px; /* Horrible little hack to ensure identically sized columns */
+}
