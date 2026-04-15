@@ -151,6 +151,9 @@
 		</section>
 	</section>
 	<script>
+		let cheapestPrice = 0;
+		let mostExpensivePrice = 0;
+
 		function updateCurrentPrice(p,t) {
 			$('#currentPrice').text(p + "p");
 			$('#currentPriceTime').text(t);
@@ -162,11 +165,13 @@
 		}
 
 		function updateCheapestPrice(p,t) {
+			cheapestPrice = p;
 			$('#cheapestPrice').text(p + "p");
 			$('#cheapestPriceTime').text(t);
 		}
 
 		function updateMostExpensivePrice(p,t) {
+			mostExpensivePrice = p;
 			$('#mostExpensivePrice').text(p + "p");
 			$('#mostExpensivePriceTime').text(t);
 		}
