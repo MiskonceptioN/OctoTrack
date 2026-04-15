@@ -182,6 +182,16 @@
 
 				$('#priceTable tbody').append(`<tr class="${rowStyle}"><th scope="row">${price.time}</th><td class="${priceStyle}">${price.price}p</td></tr>`);
 			});
+
+			// Update price chart also
+			const chartData = prices.map(price => price.price);
+			if (currentDay) {
+				priceChart.data.datasets[0].data = chartData;
+			} else {
+				priceChart.data.datasets[1].data = chartData;
+			}
+			priceChart.update();
+
 		}
 
 		function getCurrentTimePeriod() {
