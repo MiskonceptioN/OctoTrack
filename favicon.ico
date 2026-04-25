@@ -1,0 +1,429 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en-gb" class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en-gb" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en-gb" class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html lang="en-gb" class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en-gb" class="no-js"> <!--<![endif]-->
+    <head>
+        <title>Page not found | Octopus Energy</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description" content="Octopus customers pay less: Cheaper than price-cap prices, rewards for using less when the grid is stressed, and smart tariff savings for your home, car or battery">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Google verification tag -->
+        <meta name="google-site-verification" content="Fc-ZFbJ7Fkthveh7MblfzUtzpFzpd0gL5ic123rrx44" />
+        <!-- Bing validation tag -->
+        <meta name="msvalidate.01" content="3A9C84795CD97188E9FEBD3DC61F2F9A" />
+
+        <!-- Preconnects -->
+        
+        <link rel="preconnect" href="https://static.octopuscdn.com" />
+        
+
+
+        
+        
+        
+            <script>
+                // Ensure dataLayer is defined and create gtag helper function
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    window.dataLayer.push(arguments);
+                }
+
+                
+
+                // Set consent mode defaults
+                // These are later updated by the cookie preferences React app
+                gtag('consent', 'default', {
+                    ad_storage: 'denied',
+                    ad_user_data: 'denied',
+                    ad_personalization: 'denied',
+                    analytics_storage: 'denied',
+                    wait_for_update: 2500,
+                });
+
+                // Configure Floodlight tag globally, events are preference-controlled and sent later
+                gtag('js', new Date());
+                gtag('config', 'DC-11164394');
+            </script>
+
+            <!-- Page-specific data for GTM -->
+            
+
+            <!-- Google Tag Manager -->
+            
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s);j.async=true;j.src=
+            "https://sst.octopus.energy/aureinfkaw.js?"+i;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','6ba1j74=aWQ9R1RNLVBUQ1MyUA%3D%3D&page=2');</script>
+            
+            <!-- End Google Tag Manager -->
+        
+
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="https://static.octopuscdn.com/favicons/apple-touch-icon.png?v=20210127">
+        <meta name="apple-mobile-web-app-title" content="Octopus Energy">
+        <meta name="application-name" content="Octopus Energy">
+        <meta name="theme-color" content="#100030">
+        
+
+        <meta property="og:site_name" content="Octopus Energy">
+        <meta property="og:type" content="website">
+
+        
+            <meta property="og:title" content="Octopus Energy">
+            <meta property="og:url" content="https://octopus.energy">
+
+            
+            
+                <meta
+                    property="og:image"
+                    content="https://static.octopuscdn.com/oegb/social-share.png"
+                >
+            
+        
+
+            <meta name="twitter:site" content="@OctopusEnergy">
+            <meta name="twitter:creator" content="@OctopusEnergy">
+            <meta name="twitter:card" content="summary_large_image">
+
+        
+            <meta name="twitter:title" content="Octopus Energy">
+            <meta name="twitter:description" content="Cheaper, greener energy from the UK's largest investor in solar generation.">
+            <meta name="twitter:image" content="https://static.octopuscdn.com/oegb/social-share.png">
+        
+
+        
+
+        
+            <link rel="canonical" href="https://octopus.energy/favicon.ico" />
+        
+
+        
+            <link rel="alternate" hrefLang="en-gb" href="https://octopus.energy/favicon.ico" />
+        
+
+        
+            <link rel="icon" type="image/png" href="https://static.octopuscdn.com/favicons/favicon-32x32.png?v=20210127" sizes="32x32">
+            <link rel="icon" type="image/png" href="https://static.octopuscdn.com/favicons/favicon-16x16.png?v=20210127" sizes="16x16">
+            <link rel="mask-icon" href="https://static.octopuscdn.com/favicons/safari-pinned-tab.svg?v=20210127">
+        
+
+        
+        <link rel="stylesheet" type="text/css" href="https://static.octopuscdn.com/fonts/Chromatophore/fonts.min.css">
+        
+            <link rel="stylesheet" href="/static/consumer/css/styles.min.229f5e5b27d8.css">
+        
+
+        
+        
+
+        <script>
+            // we want to remove the no-js class as soon as possible on page load
+            document.getElementsByTagName('html')[0].className = document.getElementsByTagName('html')[0].className.replace(/no-js/i,'');
+        </script>
+
+        
+
+        
+
+        
+        
+    </head>
+
+    <body id="default" class="pagenotfound">
+
+        
+
+        
+            <noscript>
+                <iframe src="https://sst.octopus.energy/ns.html?id=GTM-PTCS2P" title="Google Tag Manager"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+        
+
+        
+        
+    <div class="container main-content" >
+        
+            
+
+<header class="global-header coralHeader" aria-label="Main menu">
+    <a class="skip-to-content" href="#content">Skip to main content</a>
+
+    <div class="coralHeader-inner">
+        <!-- Left side of Header -->
+        <div class="coralHeader-logo-navigation">
+            <!-- Logo -->
+            <a href="/"  class="coralHeader-logo--link">
+                <span class="coralHeader-visually-hidden">Home</span>
+                <img
+                    class="coralHeader-logo--image"
+                    src="https://static.octopuscdn.com/constantine/constantine.svg"
+                    alt=""
+                />
+            </a>
+            <!-- Menu button -->
+            <button class="coralHeader-button coralHeader-button--menu" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="coralHeader-button--inner">
+                    <span class="coralHeader-menu-icons">
+                        <img
+                            class="coralHeader-menu-bars"
+                            src="/static/consumer/img/icons/coral-nav/menu.0a93edb7ffe2.svg"
+                            alt=""
+                        />
+                        <img
+                            class="coralHeader-menu-close"
+                            src="/static/consumer/img/icons/coral-nav/cross.cbeab4994e07.svg"
+                            alt=""
+                        />
+                    </span>
+                    <span class="coralHeader-menu-label--toOpen">Menu</span>
+                    <span class="coralHeader-menu-label--toClose">Back</span>
+                </span>
+            </button>
+            <!-- Links -->
+            <nav class="coralHeader-navigation coralHeader-navigation--desktop">
+                <a href="/energy-explore/"  class="coralHeader-button" data-nav-item-primary>Energy</a>
+                <a href="/heat-pump-explore/"  class="coralHeader-button" data-nav-item-primary>Heat pumps</a>
+                <a href="/order/solar/" class="coralHeader-button" data-nav-item-primary>Solar &amp; battery</a>
+                <a href="/driving/"   class="coralHeader-button" data-nav-item-primary>Electric vehicles</a>
+            </nav>
+
+            <div class="coralHeader-overlay">
+                <!-- Account section -->
+                <div class="coralHeader-actions coralHeader-actions--mobile">
+                    
+                    <!-- Log in button -->
+                    <a
+                        href="/login/"
+                        
+                        class="coralHeader-button coralHeader-button--login"
+                    >
+                        <span class="coralHeader-button--inner">
+                            Log in
+                            <img
+                                src="/static/consumer/img/icons/coral-nav/login.b7707d89c900.svg"
+                                alt=""
+                            />
+                        </span>
+                    </a>
+                    
+                </div>
+
+                <!-- Links -->
+                <nav class="coralHeader-navigation coralHeader-navigation--mobile">
+                    <a href="/energy-explore/"  class="coralHeader-button" data-nav-item-primary>Energy</a>
+                    <a href="/heat-pump-explore/"  class="coralHeader-button" data-nav-item-primary>Heat pumps</a>
+                    <a href="/order/solar/" class="coralHeader-button" data-nav-item-primary>Solar &amp; battery</a>
+                    <a href="/driving/"  class="coralHeader-button" data-nav-item-primary>Electric vehicles</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Right side of Header -->
+        <div class="coralHeader-actions">
+            <a href="/contact-us/" class="coralHeader-button" data-nav-item-primary>
+                <span class="coralHeader-button--inner">
+                    Support
+                </span>
+            </a>
+
+            <div class="coralHeader-actions-dynamic">
+                
+                <!-- Log in button -->
+                <a href="/login/"  class="coralHeader-button">
+                    <span class="coralHeader-button--inner">
+                        Log in
+                        <img
+                            src="/static/consumer/img/icons/coral-nav/login.b7707d89c900.svg"
+                            alt=""
+                        />
+                    </span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+        
+
+        <main class="nav-offset" id="content" >
+            
+
+
+
+
+            
+    <div id="error-404">
+        <noscript>
+            <h1 class="pagenotfound-title">404</h1>
+            <div class="pagenotfound-message">
+                <p>Sorry, we can't find that page</p>
+                <a href="/">Back to homepage</a>
+            </div>
+        </noscript>
+    </div>
+
+
+            
+                <!-- Friendly Octopus that tells you to remove your charger if your device is fully charged
+                     and you are still charging -->
+                <div class="fully-charged">
+                    <div id="animation-fully-charged"></div>
+                    <div class="bubble">
+                        <p id="js-constantine-speech">Hey I&apos;m Constantine, welcome to Octopus Energy!</p>
+                        <a class="close">&times;<span class="hidden">Close window</span></a>
+                    </div>
+                </div>
+            
+        </main>
+
+        <div class="nav-mask"></div>
+
+        
+    
+
+<div class="modal" id="countryModal" role="dialog">
+    <div class="container-fluid--limit">
+        <h1 class="align-center">Seems like you're visiting from <span class="countryName"></span></h1>
+        <p class="align-center">Would you like to visit <span class="companyName"></span>?</p>
+        <p><a role="button" class="button-small mb-3" id="countrySpecificWebsiteAddress" href="">Yes please</a></p>
+        <button id="noToCountrySpecificWebsiteAddress" class="button-link js-modal-close align-center">No thanks</button>
+    </div>
+</div>
+
+<script src="/static/consumer/js/country-modal.min.d30ba1175762.js"></script>
+
+
+    </div>
+
+    
+        
+    
+
+    
+        
+            <div class="cookie-message">
+                <div id="cookie-preferences-root"></div>
+            </div>
+        
+    
+
+
+        
+        
+    
+    
+        
+        
+
+
+
+    <script
+        src="https://browser.sentry-cdn.com/6.14.0/bundle.min.js"
+        integrity="sha384-1FVbcJ5cSGdCrMNyUndHGSl0WlS+Cq5zaYdfnVF7NqkkQpU+7plvm0NomKbzcD//"
+        crossorigin="anonymous"
+    ></script>
+    <script>
+        if(window.Sentry) {
+
+            Sentry.init({
+                dsn: 'https://044e20b4a2484656869491b88f464b27@o28796.ingest.sentry.io/77696',
+                release: "dda0f690",
+                environment: 'Octopus Energy - Prod',
+                beforeSend: function(event, hint) {
+                    error = hint.originalException;
+                    if (error && error.message) {
+                        // Filter out some unfixable events.
+                        if (error.message.match(/Failed to execute 'getBattery' on 'Navigator'/i)) {
+                            return null;
+                        }
+                    }
+                    return event
+                },
+                sampleRate: 0.1
+            })
+        }
+
+        
+
+        
+        
+    </script>
+
+
+    
+    
+        <script src="/static/common/js/vendor/jquery-3.7.0.min.ed4e85ddc6e1.js"></script>
+    
+    <script>
+        var octo = {};
+    </script>
+    <!--[if !IE]> -->
+    <script src="/static/common/js/vendor/jquery-inlineSVG.min.c5b9251450be.js"></script>
+    <!-- <![endif] -->
+    <script src="/static/common/js/global.min.d863f0947780.js"></script>
+    <script src="/static/consumer/js/global.min.9675b5674ed1.js"></script>
+
+
+        
+        
+            <span class="rating-desc hidden" itemscope="" itemtype="http://schema.org/Product">
+                <span itemprop="name">Octopus Energy</span>
+                <span itemprop="award">The only energy supplier Which? has recommended nine years in a row</span>
+                <span itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating"> Rated <span itemprop="ratingValue">5</span> / 5 based on <span itemprop="reviewCount">785207</span> reviews. | <a class="ratings" href="https://uk.trustpilot.com/review/octopus.energy" rel="noopener noreferrer">Review us</a> </span>
+            </span>
+        
+
+        
+        
+    
+    
+    
+        <script
+            defer
+            id="cookie-preferences-init-script"
+            src="/static/consumer/js/cookie-preferences.bundle.6d0393ca8f3b.js"
+            data-root-id="cookie-preferences-root"
+        ></script>
+    
+    <script src="/static/consumer/js/vendor.bundle.1e7e22ef4e0d.js"></script>
+
+
+    
+    
+    <script
+        src="/static/consumer/js/error-404.bundle.7d95049ac1fe.js"
+        id="error-404-initialiser-script"
+        data-id-selector="error-404">
+    </script>
+
+
+        
+        <div class="browser-message">
+    <div class="container">
+        <p class="h1">Your browser is out of date</p>
+        <p>In order to provide you with the latest digital energy web services you need to use the latest and greatest web browsers.</p>
+        <p><a href="https://browser-update.org/update-browser.html#18:browser-update.org">Update your browser</a> for a better web experience, here and all over the internet.</p>
+    </div>
+</div>
+
+        
+        
+        
+        <!-- VERSION: 228164 -->
+        <!-- SHA: dda0f690 -->
+    </body>
+</html>
