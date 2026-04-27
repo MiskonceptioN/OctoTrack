@@ -16,3 +16,4 @@ $("#toggle-dark-mode").on("click", ()=>{toggleDarkMode();});
 $("#toggle-auto-refresh").on("click", ()=>{toggleAutoRefresh();});
 $("#toggle-highlight-current").on("click", ()=>{toggleHighlightCurrent();});
 $("#toggle-highlight-cheap").on("click", ()=>{toggleHighlightCheap();});
+$("#cheap-threshold").on("change", ()=>{updateCheapThreshold();});

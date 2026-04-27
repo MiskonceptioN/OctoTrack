@@ -42,8 +42,29 @@ function toggleHighlightCheap() {
 	const status = localStorage.getItem("highlight-cheap");
 	if (status == "enabled") {
 		localStorage.setItem("highlight-cheap", "disabled");
+		$("#toggle-highlight-cheap-group").addClass("mb-3");
+		$("#toggle-highlight-cheap-group").removeClass("mb-1");
+		$("#cheap-threshold-row").addClass("d-none");
 	} else {
 		localStorage.setItem("highlight-cheap", "enabled");
+		$("#toggle-highlight-cheap-group").addClass("mb-1");
+		$("#toggle-highlight-cheap-group").removeClass("mb-3");
+		$("#cheap-threshold-row").removeClass("d-none");
+	}
+	// Redraw price table to apply changes
+	$("#getPrices").click();
+}
+
+// Set cheap threshold
+function updateCheapThreshold() {
+	const value = Number($("#cheap-threshold").val());
+	if (typeof value === "number" && value > 0) {
+		localStorage.setItem("cheap-threshold", value);
+		cheapPriceThreshold = value;
+	} else if (typeof value === "number" && value <= 0) {
+		localStorage.setItem("cheap-threshold", 0.01);
+		$("#cheap-threshold").val(0.01);
+		cheapPriceThreshold = 0.01;
 	}
 	// Redraw price table to apply changes
 	$("#getPrices").click();
@@ -62,4 +83,12 @@ autoRefresh();
 
 if (localStorage.getItem("highlight-cheap") == "disabled") {
 	$("#toggle-highlight-cheap").removeAttr("checked");
+}
+
+if (typeof Number(localStorage.getItem("cheap-threshold")) === "number"
+	&& Number(localStorage.getItem("cheap-threshold")) >= 0 ) {
+	$("#cheap-threshold").val(Number(localStorage.getItem("cheap-threshold")));
+} else {
+	localStorage.setItem("cheap-threshold", 5);
+	$("#cheap-threshold").val(5);
 }
