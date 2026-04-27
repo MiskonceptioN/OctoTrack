@@ -9,6 +9,24 @@ function toggleDarkMode() {
 	}
 }
 
+function toggleAutoRefresh() {
+	const status = localStorage.getItem("auto-refresh");
+	if (status == "enabled") {
+		localStorage.setItem("auto-refresh", "disabled");
+	} else {
+		localStorage.setItem("auto-refresh", "enabled");
+	}
+}
+
+function autoRefresh() {
+	const status = localStorage.getItem("auto-refresh");
+	if (status == "enabled") {$("#getPrices").click();}
+	setTimeout(() => { autoRefresh(); }, 60000);
+}
+
+// Initialize settings on page load
 if (localStorage.getItem("dark-mode") == "enabled") {
 	$("html").attr("data-bs-theme", "dark");
 }
+
+autoRefresh();
