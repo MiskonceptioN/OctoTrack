@@ -185,9 +185,23 @@
 				let rowStyle = "";
 				let priceStyle = "";
 
-				rowStyle = (price.time === getCurrentTimePeriod() && currentDay === true) ? "table-primary" : "";
-				if (price.price <= cheapestPrice + PRICE_THRESHOLD) { rowStyle = "table-success"; }
-				if (price.price >= mostExpensivePrice - PRICE_THRESHOLD) { rowStyle = "table-danger"; }
+				if (price.time === getCurrentTimePeriod() && currentDay === true && localStorage.getItem("highlight-current") === "enabled") {
+					rowStyle = "table-primary";
+				}
+				if (price.price <= cheapestPrice + PRICE_THRESHOLD) {
+					if (rowStyle == "table-primary") { 
+						priceStyle = "text-success fw-bold";
+					} else {
+						rowStyle = "table-success";
+					}
+				}
+				if (price.price >= mostExpensivePrice - PRICE_THRESHOLD) {
+					if (rowStyle == "table-primary") { 
+						priceStyle = "text-danger fw-bold";
+					} else {
+						rowStyle = "table-danger";
+					}
+				}
 				if (price.price <= 0) { priceStyle = "fw-bold"; }
 
 				$('#priceTable tbody').append(`<tr class="${rowStyle}"><th scope="row">${price.time}</th><td class="${priceStyle}">${price.price}p</td></tr>`);

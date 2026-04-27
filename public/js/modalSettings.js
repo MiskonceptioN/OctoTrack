@@ -5,6 +5,10 @@ if (localStorage.getItem("dark-mode") == "enabled") {
 if (localStorage.getItem("auto-refresh") == "enabled") {
 	$("#toggle-auto-refresh").attr("checked", "checked")
 }
+if (localStorage.getItem("highlight-current") == "enabled") {
+	$("#toggle-highlight-current").attr("checked", "checked")
+}
 
 $("#toggle-dark-mode").on("click", ()=>{toggleDarkMode();});
 $("#toggle-auto-refresh").on("click", ()=>{toggleAutoRefresh();});
+$("#toggle-highlight-current").on("click", ()=>{toggleHighlightCurrent();});
