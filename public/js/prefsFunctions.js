@@ -1,3 +1,4 @@
+// Dark mode
 function toggleDarkMode() {
 	const status = localStorage.getItem("dark-mode");
 	if (status == "enabled") {
@@ -9,6 +10,7 @@ function toggleDarkMode() {
 	}
 }
 
+// Auto refresh
 function toggleAutoRefresh() {
 	const status = localStorage.getItem("auto-refresh");
 	if (status == "enabled") {
