@@ -7,3 +7,12 @@
 td, th {
 	max-width: 50px; /* Horrible little hack to ensure identically sized columns */
 }
+
+#settings-button {
+    height: 4em;
+    width: 4em;
+    fill: white;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+}
