@@ -37,6 +37,18 @@ function toggleHighlightCurrent() {
 	$("#getPrices").click();
 }
 
+// Highlight cheap times
+function toggleHighlightCheap() {
+	const status = localStorage.getItem("highlight-cheap");
+	if (status == "enabled") {
+		localStorage.setItem("highlight-cheap", "disabled");
+	} else {
+		localStorage.setItem("highlight-cheap", "enabled");
+	}
+	// Redraw price table to apply changes
+	$("#getPrices").click();
+}
+
 // Initialize settings on page load
 if (localStorage.getItem("dark-mode") == "enabled") {
 	$("html").attr("data-bs-theme", "dark");
@@ -47,3 +59,7 @@ if (localStorage.getItem("highlight-current") == "disabled") {
 }
 
 autoRefresh();
+
+if (localStorage.getItem("highlight-cheap") == "disabled") {
+	$("#toggle-highlight-cheap").removeAttr("checked");
+}

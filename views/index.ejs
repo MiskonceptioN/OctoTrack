@@ -188,11 +188,13 @@
 				if (price.time === getCurrentTimePeriod() && currentDay === true && localStorage.getItem("highlight-current") === "enabled") {
 					rowStyle = "table-primary";
 				}
+				if (localStorage.getItem("highlight-cheap") === "enabled") {
 				if (price.price <= cheapestPrice + PRICE_THRESHOLD) {
 					if (rowStyle == "table-primary") { 
 						priceStyle = "text-success fw-bold";
 					} else {
 						rowStyle = "table-success";
+						}
 					}
 				}
 				if (price.price >= mostExpensivePrice - PRICE_THRESHOLD) {

@@ -8,7 +8,11 @@ if (localStorage.getItem("auto-refresh") == "enabled") {
 if (localStorage.getItem("highlight-current") == "enabled") {
 	$("#toggle-highlight-current").attr("checked", "checked")
 }
+if (localStorage.getItem("highlight-cheap") == "enabled") {
+	$("#toggle-highlight-cheap").attr("checked", "checked")
+}
 
 $("#toggle-dark-mode").on("click", ()=>{toggleDarkMode();});
 $("#toggle-auto-refresh").on("click", ()=>{toggleAutoRefresh();});
 $("#toggle-highlight-current").on("click", ()=>{toggleHighlightCurrent();});
+$("#toggle-highlight-cheap").on("click", ()=>{toggleHighlightCheap();});
