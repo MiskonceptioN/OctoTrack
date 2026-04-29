@@ -103,6 +103,20 @@ function updateExpensiveThreshold() {
 	$("#getPrices").click();
 }
 
+function updateGraphColour(d, c) {
+	const validColourRegex = /^#([0-9A-F]{3}){1,2}$/i;
+	if (!validColourRegex.test(c)) {
+		return;
+	}
+
+	// Store new colour in local storage and update graph
+	if (d === "today") {
+		localStorage.setItem("today-colour", c);
+		priceChart.data.datasets[0].borderColor = c;
+		priceChart.update();
+	}
+}
+
 // Initialize settings on page load
 if (localStorage.getItem("dark-mode") == "enabled") {
 	$("html").attr("data-bs-theme", "dark");

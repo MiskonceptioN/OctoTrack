@@ -6,3 +6,4 @@ if (localStorage.getItem("highlight-cheap") == undefined) {localStorage.setItem(
 if (localStorage.getItem("cheap-threshold") == undefined) {localStorage.setItem("cheap-threshold", "5")}
 if (localStorage.getItem("highlight-expensive") == undefined) {localStorage.setItem("highlight-expensive", "enabled")}
 if (localStorage.getItem("expensive-threshold") == undefined) {localStorage.setItem("expensive-threshold", "5")}
+if (localStorage.getItem("today-colour") == undefined) {localStorage.setItem("today-colour", "#4bc0c0")}
