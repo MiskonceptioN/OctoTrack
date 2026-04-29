@@ -187,6 +187,7 @@
 				let rowStyle = "";
 				let priceStyle = "";
 
+				if (price.price <= 0) { priceStyle = "fw-bold"; }
 				if (price.time === getCurrentTimePeriod() && currentDay === true && localStorage.getItem("highlight-current") === "enabled") {
 					rowStyle = "table-primary";
 				}
@@ -206,7 +207,6 @@
 						rowStyle = "table-danger";
 					}
 				}
-				if (price.price <= 0) { priceStyle = "fw-bold"; }
 
 				$('#priceTable tbody').append(`<tr class="${rowStyle}"><th scope="row">${price.time}</th><td class="${priceStyle}">${price.price}p</td></tr>`);
 			});
