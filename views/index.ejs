@@ -148,6 +148,10 @@
 					type: 'line',
 					data: {labels, datasets: combinedDatasets},
 				});
+
+					// Ensure graph resizes as the window does.
+					const observer = new ResizeObserver(() => { priceChart.resize() });
+					observer.observe(document.getElementById("pricing-details"));
 			</script>
 		</section>
 		</section>
