@@ -106,15 +106,26 @@ function updateExpensiveThreshold() {
 function updateGraphColour(d, c) {
 	const validColourRegex = /^#([0-9A-F]{3}){1,2}$/i;
 	if (!validColourRegex.test(c)) {
-		return;
+		if (d === "today") {
+			localStorage.removeItem("today-colour");
+			c = "#4bc0c0";
+		} else {
+			localStorage.removeItem("tomorrow-colour");
+			c = "#bada55";
+		}
 	}
 
 	// Store new colour in local storage and update graph
 	if (d === "today") {
 		localStorage.setItem("today-colour", c);
 		priceChart.data.datasets[0].borderColor = c;
-		priceChart.update();
+		$("#today-colour").val(c);
+	} else {
+		localStorage.setItem("tomorrow-colour", c);
+		priceChart.data.datasets[1].borderColor = c;
+		$("#tomorrow-colour").val(c);
 	}
+	priceChart.update();
 }
 
 // Initialize settings on page load
@@ -146,4 +157,11 @@ if (typeof Number(localStorage.getItem("expensive-threshold")) === "number"
 } else {
 	localStorage.setItem("expensive-threshold", 5);
 	$("#expensive-threshold").val(5);
+}
+
+if (localStorage.getItem("today-colour")) {
+	updateGraphColour("today", localStorage.getItem("today-colour"));
+}
+if (localStorage.getItem("tomorrow-colour")) {
+	updateGraphColour("tomorrow", localStorage.getItem("tomorrow-colour"));
 }

@@ -17,6 +17,9 @@ if (localStorage.getItem("highlight-expensive") == "enabled") {
 if (localStorage.getItem("today-colour")) {
 	$("#today-colour").val(localStorage.getItem("today-colour"));
 }
+if (localStorage.getItem("tomorrow-colour")) {
+	$("#tomorrow-colour").val(localStorage.getItem("tomorrow-colour"));
+}
 
 $("#toggle-dark-mode").on("click", ()=>{toggleDarkMode();});
 $("#toggle-auto-refresh").on("click", ()=>{toggleAutoRefresh();});
@@ -26,3 +29,4 @@ $("#cheap-threshold").on("change", ()=>{updateCheapThreshold();});
 $("#toggle-highlight-expensive").on("click", ()=>{toggleHighlightExpensive();});
 $("#expensive-threshold").on("change", ()=>{updateExpensiveThreshold();});
 $("#today-colour").on("change", ()=>{updateGraphColour("today", $("#today-colour").val());});
+$("#tomorrow-colour").on("change", ()=>{updateGraphColour("tomorrow", $("#tomorrow-colour").val());});
