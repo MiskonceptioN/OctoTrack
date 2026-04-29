@@ -54,25 +54,25 @@
 				</div>
 				<label for="cheap-threshold" class="col-auto col-form-label">of cheapest price</label>
 			</div>
-			<section class="d-none">
-			<div class="mb-3">
+			<div id="toggle-highlight-expensive-group" class="mb-1">
 				<div class="form-check form-switch">
-					<input class="form-check-input" type="checkbox" id="checkNativeSwitch" switch checked>
-					<label class="form-check-label" for="checkNativeSwitch">
+					<input class="form-check-input" type="checkbox" id="toggle-highlight-expensive" switch checked>
+					<label class="form-check-label" for="toggle-highlight-expensive">
 						Highlight expensive times
 					</label>
 				</div>
 			</div>
-			<div class="row mb-3">
-				<label for="inputEmail3" class="col-auto col-form-label">Highlight within</label>
+			<div id="expensive-threshold-row" class="row mb-3">
+				<label for="expensive-threshold" class="col-auto col-form-label">Highlight within</label>
 				<div class="col-sm-4">
 					<div class="input-group">
-						<input type="number" class="form-control" placeholder="5" >
-						<span class="input-group-text" id="basic-addon2">p</span>
+						<input type="number" class="form-control" id="expensive-threshold" placeholder="5" min="0.01" step="0.01">
+						<span class="input-group-text">p</span>
 					</div>
 				</div>
-				<label for="inputEmail3" class="col-auto col-form-label">of highest price</label>
+				<label for="expensive-threshold" class="col-auto col-form-label">of highest price</label>
 			</div>
+			<section class="d-none">
 			<hr />
 	        <h2 class="modal-title fs-6 mb-2" id="settingsModalLabel">Graph</h1>
 			<div class="row mb-3">

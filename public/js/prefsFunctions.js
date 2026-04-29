@@ -70,6 +70,39 @@ function updateCheapThreshold() {
 	$("#getPrices").click();
 }
 
+// Highlight expensive times
+function toggleHighlightExpensive() {
+	const status = localStorage.getItem("highlight-expensive");
+	if (status == "enabled") {
+		localStorage.setItem("highlight-expensive", "disabled");
+		$("#toggle-highlight-expensive-group").addClass("mb-3");
+		$("#toggle-highlight-expensive-group").removeClass("mb-1");
+		$("#expensive-threshold-row").addClass("d-none");
+	} else {
+		localStorage.setItem("highlight-expensive", "enabled");
+		$("#toggle-highlight-expensive-group").addClass("mb-1");
+		$("#toggle-highlight-expensive-group").removeClass("mb-3");
+		$("#expensive-threshold-row").removeClass("d-none");
+	}
+	// Redraw price table to apply changes
+	$("#getPrices").click();
+}
+
+// Set expensive threshold
+function updateExpensiveThreshold() {
+	const value = Number($("#expensive-threshold").val());
+	if (typeof value === "number" && value > 0) {
+		localStorage.setItem("expensive-threshold", value);
+		expensivePriceThreshold = value;
+	} else if (typeof value === "number" && value <= 0) {
+		localStorage.setItem("expensive-threshold", 0.01);
+		$("#expensive-threshold").val(0.01);
+		expensivePriceThreshold = 0.01;
+	}
+	// Redraw price table to apply changes
+	$("#getPrices").click();
+}
+
 // Initialize settings on page load
 if (localStorage.getItem("dark-mode") == "enabled") {
 	$("html").attr("data-bs-theme", "dark");
@@ -91,4 +124,12 @@ if (typeof Number(localStorage.getItem("cheap-threshold")) === "number"
 } else {
 	localStorage.setItem("cheap-threshold", 5);
 	$("#cheap-threshold").val(5);
+}
+
+if (typeof Number(localStorage.getItem("expensive-threshold")) === "number"
+	&& Number(localStorage.getItem("expensive-threshold")) >= 0 ) {
+	$("#expensive-threshold").val(Number(localStorage.getItem("expensive-threshold")));
+} else {
+	localStorage.setItem("expensive-threshold", 5);
+	$("#expensive-threshold").val(5);
 }

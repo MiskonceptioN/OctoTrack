@@ -11,9 +11,14 @@ if (localStorage.getItem("highlight-current") == "enabled") {
 if (localStorage.getItem("highlight-cheap") == "enabled") {
 	$("#toggle-highlight-cheap").attr("checked", "checked")
 }
+if (localStorage.getItem("highlight-expensive") == "enabled") {
+	$("#toggle-highlight-expensive").attr("checked", "checked")
+}
 
 $("#toggle-dark-mode").on("click", ()=>{toggleDarkMode();});
 $("#toggle-auto-refresh").on("click", ()=>{toggleAutoRefresh();});
 $("#toggle-highlight-current").on("click", ()=>{toggleHighlightCurrent();});
 $("#toggle-highlight-cheap").on("click", ()=>{toggleHighlightCheap();});
 $("#cheap-threshold").on("change", ()=>{updateCheapThreshold();});
+$("#toggle-highlight-expensive").on("click", ()=>{toggleHighlightExpensive();});
+$("#expensive-threshold").on("change", ()=>{updateExpensiveThreshold();});

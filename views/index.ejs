@@ -154,8 +154,8 @@
 	<script>
 		let cheapestPrice = 0;
 		let mostExpensivePrice = 0;
-		let PRICE_THRESHOLD = 5; // Threshold in pence for highlighting prices as cheap or expensive
 		let cheapPriceThreshold = Number(localStorage.getItem("cheap-threshold")) || 5;
+		let expensivePriceThreshold = Number(localStorage.getItem("expensive-threshold")) || 5;
 
 		function updateCurrentPrice(p,t) {
 			$('#currentPrice').text(p + "p");
@@ -198,7 +198,7 @@
 						}
 					}
 				}
-				if (price.price >= mostExpensivePrice - PRICE_THRESHOLD) {
+				if (price.price >= mostExpensivePrice - expensivePriceThreshold) {
 					if (rowStyle == "table-primary") { 
 						priceStyle = "text-danger fw-bold";
 					} else {
