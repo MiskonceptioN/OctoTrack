@@ -103,6 +103,7 @@ function updateExpensiveThreshold() {
 	$("#getPrices").click();
 }
 
+// Set graph colour
 function updateGraphColour(d, c) {
 	const validColourRegex = /^#([0-9A-F]{3}){1,2}$/i;
 	if (!validColourRegex.test(c)) {
