@@ -20,6 +20,9 @@ if (localStorage.getItem("today-colour")) {
 if (localStorage.getItem("tomorrow-colour")) {
 	$("#tomorrow-colour").val(localStorage.getItem("tomorrow-colour"));
 }
+if (localStorage.getItem("show-graph") == "enabled") {
+	$("#toggle-graph").attr("checked", "checked")
+}
 
 $("#toggle-dark-mode").on("click", ()=>{toggleDarkMode();});
 $("#toggle-auto-refresh").on("click", ()=>{toggleAutoRefresh();});
@@ -30,3 +33,4 @@ $("#toggle-highlight-expensive").on("click", ()=>{toggleHighlightExpensive();});
 $("#expensive-threshold").on("change", ()=>{updateExpensiveThreshold();});
 $("#today-colour").on("change", ()=>{updateGraphColour("today", $("#today-colour").val());});
 $("#tomorrow-colour").on("change", ()=>{updateGraphColour("tomorrow", $("#tomorrow-colour").val());});
+$("#toggle-graph").on("click", ()=>{toggleGraph();});

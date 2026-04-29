@@ -128,6 +128,18 @@ function updateGraphColour(d, c) {
 	priceChart.update();
 }
 
+// Toggle graph
+function toggleGraph() {
+	const status = localStorage.getItem("show-graph");
+	if (status == "enabled") {
+		$("#pricing-graph").addClass("d-none");
+		localStorage.setItem("show-graph", "disabled");
+	} else {
+		$("#pricing-graph").removeClass("d-none");
+		localStorage.setItem("show-graph", "enabled");
+	}
+}
+
 // Initialize settings on page load
 if (localStorage.getItem("dark-mode") == "enabled") {
 	$("html").attr("data-bs-theme", "dark");
@@ -164,4 +176,7 @@ if (localStorage.getItem("today-colour")) {
 }
 if (localStorage.getItem("tomorrow-colour")) {
 	updateGraphColour("tomorrow", localStorage.getItem("tomorrow-colour"));
+}
+if (localStorage.getItem("show-graph") == "disabled") {
+	$("#pricing-graph").addClass("d-none");
 }
