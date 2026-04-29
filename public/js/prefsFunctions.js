@@ -21,7 +21,7 @@ function toggleAutoRefresh() {
 }
 function autoRefresh() {
 	const status = localStorage.getItem("auto-refresh");
-	if (status == "enabled") {$("#getPrices").click();}
+	if (status == "enabled" && $("#getPrices").hasClass("active")) {$("#getPrices").click();} // Only 'click' the button if the user is on the today view
 	setTimeout(() => { autoRefresh(); }, 60000);
 }
 
