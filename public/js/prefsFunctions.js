@@ -134,9 +134,11 @@ function toggleGraph() {
 	const status = localStorage.getItem("show-graph");
 	if (status == "enabled") {
 		$("#pricing-graph").addClass("d-none");
+		$("#pricing-colours-group").addClass("d-none");
 		localStorage.setItem("show-graph", "disabled");
 	} else {
 		$("#pricing-graph").removeClass("d-none");
+		$("#pricing-colours-group").removeClass("d-none");
 		localStorage.setItem("show-graph", "enabled");
 	}
 }
@@ -180,4 +182,5 @@ if (localStorage.getItem("tomorrow-colour")) {
 }
 if (localStorage.getItem("show-graph") == "disabled") {
 	$("#pricing-graph").addClass("d-none");
+	$("#pricing-colours-group").addClass("d-none");
 }
