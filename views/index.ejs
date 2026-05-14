@@ -315,6 +315,7 @@
 			const fetchUrl = calculateUrl(dataTarget);
 
 			$(this).html(spinner);
+			$(this).attr("disabled", true);
 
 
 			const prices = [];
@@ -374,6 +375,7 @@
 				})
 				.finally(() => {
 					$(this).html(textContent);
+					$(this).attr("disabled", false);
 				});
 		});
 
