@@ -258,6 +258,15 @@
 			return julyOffset < januaryOffset;
 		}
 
+		function shakeButton(target) {
+			$(target).addClass("btn-outline-danger");
+			$(target).removeClass("btn-outline-primary");
+			setTimeout(() => {
+				$(target).addClass("btn-outline-primary");
+				$(target).removeClass("btn-outline-danger");
+			}, 1000);
+		}
+
 		function calculateUrl(day = "today") {
 			const fromDate = new Date();
 				fromDate.setHours(0, 0, 0, 0); // Set h, m, s, ms to midnight UTC
