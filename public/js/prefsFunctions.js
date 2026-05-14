@@ -143,6 +143,21 @@ function toggleGraph() {
 	}
 }
 
+// Set the data region
+function updateRegion(r) {
+	const validRegionRegex = /^(?:[A-H]|[J-N]|P)$/;
+	if (!validRegionRegex.test(r)) {
+		localStorage.removeItem("region");
+		r = "J";
+		$("#region-picker").val("J");
+	}
+
+	localStorage.setItem("region", r);
+
+	// Redraw price table to apply changes
+	$("#getPrices").click();
+}
+
 // Initialize settings on page load
 if (localStorage.getItem("dark-mode") == "enabled") {
 	$("html").attr("data-bs-theme", "dark");

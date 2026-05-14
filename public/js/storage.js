@@ -9,3 +9,4 @@ if (localStorage.getItem("expensive-threshold") == undefined) {localStorage.setI
 if (localStorage.getItem("today-colour") == undefined) {localStorage.setItem("today-colour", "#4bc0c0")}
 if (localStorage.getItem("tomorrow-colour") == undefined) {localStorage.setItem("tomorrow-colour", "#bada55")}
 if (localStorage.getItem("show-graph") == undefined) {localStorage.setItem("show-graph", "enabled")}
+if (localStorage.getItem("region") == undefined) {localStorage.setItem("region", "J")}

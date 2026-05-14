@@ -23,6 +23,9 @@ if (localStorage.getItem("tomorrow-colour")) {
 if (localStorage.getItem("show-graph") == "enabled") {
 	$("#toggle-graph").attr("checked", "checked")
 }
+if (localStorage.getItem("region")) {
+	$("#region-picker").val(localStorage.getItem("region"));
+}
 
 $("#toggle-dark-mode").on("click", ()=>{toggleDarkMode();});
 $("#toggle-auto-refresh").on("click", ()=>{toggleAutoRefresh();});
@@ -34,3 +37,4 @@ $("#expensive-threshold").on("change", ()=>{updateExpensiveThreshold();});
 $("#today-colour").on("change", ()=>{updateGraphColour("today", $("#today-colour").val());});
 $("#tomorrow-colour").on("change", ()=>{updateGraphColour("tomorrow", $("#tomorrow-colour").val());});
 $("#toggle-graph").on("click", ()=>{toggleGraph();});
+$("#region-picker").on("change", ()=>{updateRegion($("#region-picker").val());});

@@ -274,7 +274,10 @@
 			const periodFrom = fromDate.toISOString().split(".")[0] + "Z";
 			const periodTo = toDate.toISOString().split(".")[0] + "Z";
 
-			return `https://api.octopus.energy/v1/products/AGILE-24-10-01/electricity-tariffs/E-1R-AGILE-24-10-01-J/standard-unit-rates/?period_from=${periodFrom}&period_to=${periodTo}`;
+			// Check the correct region
+			const region = localStorage.getItem("region") || "J";
+
+			return `https://api.octopus.energy/v1/products/AGILE-24-10-01/electricity-tariffs/E-1R-AGILE-24-10-01-${region}/standard-unit-rates/?period_from=${periodFrom}&period_to=${periodTo}`;
 		}
 
 		function showMessage(message, type = "danger") {
