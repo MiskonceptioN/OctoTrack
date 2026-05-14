@@ -372,6 +372,7 @@
 				})
 				.catch(error => {
 					showMessage(error);
+					shakeButton(this);
 				})
 				.finally(() => {
 					$(this).html(textContent);
